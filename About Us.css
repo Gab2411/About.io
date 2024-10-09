@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    padding: 35px 20px;
+    background-color: #fff;
+    
+}
+
+.logo {
+    margin-left: 50px; /* Adds space between logo and nav */
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 200px; /* Optional: Adds margin to move nav items slightly right */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    font-size: 24px; /* Increased font size for header items */
+    padding: 10px 15px; /* Add padding to make items larger */
+    border: 2px solid transparent; /* Transparent border */
+    transition: border-color 0.4s, background-color 0.4s; /* Smooth transition */
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Show black border on hover */
+nav ul li a:hover {
+    border-color: #000; /* Black border on hover */
+}
+
+.search-signin {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Moves search bar and sign-in button to the far right */
+}
+
+.search-signin input {
+    padding: 15px;
+    width: 600px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-right: 50px;
+}
+
+.search-signin .signin-btn {
+    margin-right: 50px; /* Increased margin to move the button slightly to the right */
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px; /* Increased font size for sign-in button */
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-signin .signin-btn:hover {
+    border-color: #000000; /* Blue border on hover */
+}
+
+footer {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+/* Info Section Styling */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 20px;
+    flex-wrap: wrap; /* To allow multiple lines for smaller screens */
+}
+
+.info-box {
+    flex: 100%;
+    margin: 20px 10px; /* Increased margin to create more space between boxes */
+    border: 2px solid #003366;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    width: 30%; /* Set width for three boxes per row */
+}
+
+.info-box h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .info-box {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px;
+    }
+}
